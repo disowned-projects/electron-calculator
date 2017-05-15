@@ -18,11 +18,17 @@ function createWindow() {
         resizable: false
     })
 
+    const { URL, PROTOCOL } = process.env.NODE_ENV === 'development'
+        ? { URL: 'localhost:3000', PROTOCOL: 'http:' }
+        : {
+            URL: path.join(__dirname, 'calculator/build/index.html'),
+            PROTOCOL: 'file:'
+        }
     // and load the index.html of the app.
     win.loadURL(
         url.format({
-            pathname: path.join('localhost:3000'),
-            protocol: 'http:',
+            pathname: URL,
+            protocol: PROTOCOL,
             slashes: true,
         })
     )

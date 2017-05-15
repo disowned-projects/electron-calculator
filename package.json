@@ -4,13 +4,19 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development electron .",
+    "run": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./build.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^1.6.7"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.7.0",
+    "rimraf": "^2.6.1"
   }
 }
