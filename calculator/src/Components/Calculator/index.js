@@ -66,7 +66,7 @@ class Calculator extends React.Component {
             : this.setState(state => {
                 let {currentValue} = state
                 currentValue = '' + currentValue
-                const operatars = /^[+-/x]$/
+                const operatars = /^[+-/x][^.]$/
                 let {length} = currentValue
                 if (operatars.test(currentValue[currentValue.length - 2])) {
                     currentValue = currentValue.slice(0, length - 3)
