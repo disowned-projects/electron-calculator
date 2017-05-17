@@ -10,7 +10,7 @@ const Display = styled.div`
     margin: 0
     height: 70px
     padding-top: 10px
-    
+    font-family: 'Arial'
 `
 
 const Current = styled.p`

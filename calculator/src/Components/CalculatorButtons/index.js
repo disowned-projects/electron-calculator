@@ -8,14 +8,19 @@ const ButtonsBackground = styled.div`
 `
 
 const Button = styled.button`
-    background-color: rgba(250, 250, 250, 0.5)
-    height: 52.5px
-    width: 62.5px
-    margin: 0
-    padding: 0
-    border: 1px solid gray
-    color: white
-    font-size: 20px
+    background-color: rgba(250, 250, 250, 0.5);
+    height: 52.5px;
+    width: 62.5px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+    color: white;
+    font-size: 20px;
+
+    &:focus {
+        color: black;
+        outline: none;
+    }
 `
 const ZeroButton = styled(Button)`
     width: 125px
