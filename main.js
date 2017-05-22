@@ -11,11 +11,13 @@ function createWindow() {
     win = new BrowserWindow({ 
         width: 250, 
         height: 350, 
+        minWidth: 250,
+        minHeight: 350,
         movable: true,
-        backgroundColor: '#000',
         titleBarStyle: 'hidden',
         transparent: true,
-        resizable: false
+        resizable: false,
+        vibrancy: 'dark'
     })
 
     const { URL, PROTOCOL } = process.env.NODE_ENV === 'development'

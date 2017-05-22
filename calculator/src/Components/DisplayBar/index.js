@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Display = styled.div`
-    background-color: rgba(0,0,0,0.8)
+    -webkit-app-region: drag
     color: red
     width: 100%
     text-align: right
