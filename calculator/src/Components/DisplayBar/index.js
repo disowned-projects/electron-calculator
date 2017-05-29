@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import DynamicFont from 'react-dynamic-font'
 
 const Display = styled.div`
     -webkit-app-region: drag
@@ -25,9 +26,9 @@ const Previous = styled.p`
     margin: 0
 `
 
-export default ({currentValue, previousValue}) => (
+export default ({ currentValue, previousValue }) => (
     <Display>
-        <Previous>{previousValue || 0}</Previous>
-        <Current>{currentValue || 0}</Current>
+        <Previous><DynamicFont smooth content={previousValue || 0} /></Previous>
+        <Current><DynamicFont smooth content={currentValue || 0} /></Current>
     </Display>
 )

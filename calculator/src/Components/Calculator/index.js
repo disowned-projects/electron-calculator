@@ -27,7 +27,7 @@ class Calculator extends React.Component {
             if (this.state.currentValue === '0') this.setState({
                 currentValue: ''
             })
-            this.setState(state => ({
+            else this.setState(state => ({
                 currentValue: state.currentValue += value
             }))
             return
