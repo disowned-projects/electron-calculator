@@ -6,10 +6,10 @@ import CalculatorButtons from 'Components/CalculatorButtons'
 
 const Background = styled.div`
     background-color: rgba(0,0,0,0.5);
-    position: fixed;
+    box-shadow: 2px 2px 3px black
     top: 0px;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 `
 

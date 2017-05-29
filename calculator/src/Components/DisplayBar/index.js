@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Display = styled.div`
     -webkit-app-region: drag
     color: red
-    width: 100%
+    width: 95%
     text-align: right
     padding: 5px
     margin: 0
@@ -17,14 +17,12 @@ const Current = styled.p`
     color: rgba(0, 250, 250, 0.5)
     padding: 0
     margin: 0
-    padding-right: 20px
     font-size: 44px
 `
 const Previous = styled.p`
     color: rgba(250, 250, 250, 0.5)
     padding: 0
     margin: 0
-    padding-right: 25px
 `
 
 export default ({currentValue, previousValue}) => (
